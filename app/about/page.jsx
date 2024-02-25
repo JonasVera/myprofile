@@ -56,7 +56,7 @@ function page() {
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-           Ao longo de minha trajetória, destaco minha especialização na migração de sistemas, engajamento em projetos diversificados e habilidade em resolução de falhas. Trabalhei com uma variedade de tecnologias, incluindo Java, Spring Boot, Angular, VB.Net e C#. Minha experiência abrange desde a concepção até a implementação, garantindo soluções eficazes. Recentemente, concentrei-me em testes, correções e desenvolvimento utilizando C# .Net, no âmbito do Scrum. Estou preparado para aplicar essa experiência em novos desafios e contribuir para o sucesso de futuros projetos.
+            Ao longo de minha trajetória, destaco minha especialização na migração de sistemas, engajamento em projetos diversificados e habilidade em resolução de falhas. Trabalhei com uma variedade de tecnologias, incluindo Java, Spring Boot, Angular, VB.Net e C#. Minha experiência abrange desde a concepção até a implementação, garantindo soluções eficazes. Recentemente, concentrei-me em testes, correções e desenvolvimento utilizando C# .Net, no âmbito do Scrum. Estou preparado para aplicar essa experiência em novos desafios e contribuir para o sucesso de futuros projetos.
           </motion.p>
         </div>
 
@@ -95,9 +95,9 @@ function page() {
               transition: { duration: 0.4, delay: 0.5 },
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
-          > 
+          >
 
-Aos 16 anos, iniciei minha jornada no mundo da programação através de uma escola técnica, onde cursei o ensino médio e técnico em informática. Ao concluir o curso, já no terceiro ano do ensino médio, tinha adquirido habilidades para desenvolver sistemas desktop. No entanto, esse não foi meu primeiro contato com a informática. Desde a adolescência, frequentava cursos básicos na área e trabalhava com formatação de computadores. Apesar disso, sentia que essas atividades eram limitadas e almejava compreender mais profundamente o universo da programação, desejando ser capaz de criar meus próprios softwares.
+            Aos 16 anos, iniciei minha jornada no mundo da programação através de uma escola técnica, onde cursei o ensino médio e técnico em informática. Ao concluir o curso, já no terceiro ano do ensino médio, tinha adquirido habilidades para desenvolver sistemas desktop. No entanto, esse não foi meu primeiro contato com a informática. Desde a adolescência, frequentava cursos básicos na área e trabalhava com formatação de computadores. Apesar disso, sentia que essas atividades eram limitadas e almejava compreender mais profundamente o universo da programação, desejando ser capaz de criar meus próprios softwares.
 
 
           </motion.p>
@@ -111,8 +111,8 @@ Aos 16 anos, iniciei minha jornada no mundo da programação através de uma esc
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-A oportunidade para realizar esse sonho surgiu quando ingressei na escola técnica. Foi então que decidi construir minha carreira como programador. Em 2021, dei um importante passo ao me formar como analista de sistemas pela Faculdade Lourenço Filho. Este foi apenas o início de uma jornada em constante aprendizado e evolução no mundo da tecnologia.
- 
+            A oportunidade para realizar esse sonho surgiu quando ingressei na escola técnica. Foi então que decidi construir minha carreira como programador. Em 2021, dei um importante passo ao me formar como analista de sistemas pela Faculdade Lourenço Filho. Este foi apenas o início de uma jornada em constante aprendizado e evolução no mundo da tecnologia.
+
           </motion.p>
 
           <motion.h1
@@ -124,7 +124,8 @@ A oportunidade para realizar esse sonho surgiu quando ingressei na escola técni
             }}
             className="text-3xl font-InterBo mt-7 my-3 dark:text-white text-neutral-800"
           >
-            My Side Projects
+            
+          Meus projetos paralelos
           </motion.h1>
           <motion.p
             initial={{ y: 100, opacity: 0 }}
@@ -180,7 +181,7 @@ A oportunidade para realizar esse sonho surgiu quando ingressei na escola técni
           <div className="mx-auto max-w-md">
             <div>
               <h2 className=" text-4xl text-center dark:text-white text-[#353849] font-InterBo">
-                Let’s work together.
+              Let’s work together.
               </h2>
               <p className="text-center mt-3 dark:text-neutral-300 text-[#666D80] text-lg">
                 Creating user experience and visual appealing design

@@ -103,21 +103,9 @@ export default function Home() {
                 >
                  
                 Desenvolvedor de software, <br /> 
-                Atualmente trabalhando na Foton Informatica
+                Atualmente trabalhando na <br/>Foton Informatica com <br/> desenvolvimento de sistemas bancarios
                 </motion.p>
-
-                <div className="flex items-center gap-x-2 mt-6 ">
-                  <div className="bg-black dark:bg-[#373737] w-fit shadow-md  px-2 rounded-md flex items-center gap-x-2 py-1">
-                    <AiOutlinePlusCircle className="text-white tex-3" />
-                    <span className="text-white  font-semibold">Hire Me</span>
-                  </div>
-                  <div className="border-neutral-300 dark:border-neutral-700/50 shadow-md border  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
-                    <FiCopy className="" />
-                    <span className="text-neutral-700 dark:text-white  font-semibold">
-                      Copy Email
-                    </span>
-                  </div>
-                </div>
+ 
               </div>
               <div className="border text-center flex md:justify-center border-neutral-200 dark:border-neutral-700 dark:bg-[#2C2C2C] w-fit md:order-1 order-1 rounded-full p-3 ">
                 <motion.img
@@ -129,7 +117,7 @@ export default function Home() {
                     transition: { duration: 0.4, delay: 0.5 },
                   }}
                   className="w-32 h-32 flex object-cover   rounded-full "
-                  src="https://media.licdn.com/dms/image/C4D03AQG_LE4Bt0iu7A/profile-displayphoto-shrink_200_200/0/1662572699019?e=1714608000&v=beta&t=g-iFlhVGYWxOVwW_en-M9P3nAE4Z8a0YlfDrcxAnhW0"
+                  src="https://lh3.googleusercontent.com/a/ACg8ocLhXQ8nbYCXlxpsNl4YIeqGGn_YTHCA21dren9EaEulQF5i=s288-c-no"
                   alt=""
                 />
               </div>
@@ -142,7 +130,7 @@ export default function Home() {
                 <div className="flex items-center gap-x-2 font-InterRe">
                   <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
                   <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
-                    Projects
+                    Experiencia
                   </h1>
                 </div>
 
@@ -193,7 +181,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="dark:bg-[#2C2C2C] bg-[#F6F8FA] p-6  mt-6 rounded-md">
+            
+            <div hidden="true" className="dark:bg-[#2C2C2C] bg-[#F6F8FA] p-6  mt-6 rounded-md">
               <div className="flex items-center gap-x-2 font-InterRe">
                 <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
                 <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
@@ -242,10 +231,10 @@ export default function Home() {
           <div className="mx-auto max-w-md">
             <div>
               <h2 className=" text-4xl text-center dark:text-white text-[#353849] font-InterBo">
-                Let’s work together.
+                 Vamos trabalhar juntos.
               </h2>
               <p className="text-center mt-3 dark:text-neutral-300 text-[#666D80] text-lg">
-                Creating user experience and visual appealing design
+              Posso ajudar você a transformar suas ideias em realidade por meio da programação.
               </p>
             </div>
 
@@ -253,12 +242,12 @@ export default function Home() {
               <div className="flex items-center gap-x-4 justify-center mt-6">
                 <div className="bg-black dark:bg-[#373737] w-fit shadow-md  px-2 rounded-md flex items-center gap-x-2 py-1">
                   <AiOutlinePlusCircle className="text-white tex-3" />
-                  <span className="text-white  font-semibold">Hire Me</span>
+                  <span className="text-white  font-semibold">Entre em contato</span>
                 </div>
                 <div className="border-neutral-300 shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                   <FiCopy className="" />
                   <span className="text-neutral-700  dark:text-white font-semibold">
-                    Copy Email
+                    Copiar Email
                   </span>
                 </div>
               </div>
@@ -270,7 +259,7 @@ export default function Home() {
               <div className="flex items-center gap-x-2 font-InterRe">
                 <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
                 <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
-                  Follow Me
+                  Me siga em 
                 </h1>
               </div>
 
@@ -281,9 +270,7 @@ export default function Home() {
                 <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
                   <CiInstagram className="text-neutral-500 dark:text-white" />
                 </div>{" "}
-                <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex justify-center items-center  gap-x-1 ">
-                  <AiOutlineDribbble className="text-neutral-500 dark:text-white" />
-                </div>
+  
                 <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1  ">
                   <FaLinkedinIn className="text-neutral-500 dark:text-white" />
                 </div>
@@ -294,12 +281,12 @@ export default function Home() {
           <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
             <div className="text-center">
               <span className="text-neutral-700 dark:text-neutral-400">
-                © 2023 Joscript Folio – Jo free Templates
+                © {new Date().getFullYear()} Jonas Silva Vera 
               </span>
               <p className="text-neutral-500">
                 By{" "}
                 <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Joscript
+                  Jonas
                 </span>
               </p>
             </div>

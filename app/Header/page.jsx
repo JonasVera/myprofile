@@ -14,10 +14,10 @@ import {
 import { useTheme } from "next-themes";
 
 let links = [
-  { icons: <PiHouseSimpleThin />, path: "/" },
+  { icons: <PiHouseSimpleThin />, path: "/" }, 
+  { icons: <PiBagSimpleLight />, path: "/product" },
   { icons: <PiUserLight />, path: "/about" },
   { icons: <PiLaptopThin />, path: "/project" },
-  { icons: <PiBagSimpleLight />, path: "/product" },
 ];
 
 function Headpage() {
@@ -90,7 +90,7 @@ function Headpage() {
             <Link href={"/contact"}>
               <div className="bg-black dark:bg-[#373737]  px-2 rounded-md flex items-center gap-x-2 py-1">
                 <AiOutlinePlusCircle className="text-white tex-3" />
-                <span className="text-white  font-semibold">Hire Me</span>
+                <span className="text-white  font-semibold">Entre em contato</span>
               </div>
             </Link>
           </div>
