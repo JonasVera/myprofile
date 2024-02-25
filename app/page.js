@@ -147,7 +147,7 @@ export default function Home() {
                   <div className=''>
                     {profileData.experiencia_profissional.map((experiencia) => (
 
-                      <ol key={empresa} class="relative border-s border-[#28C780] dark:border-[#115e3b]">
+                      <ol key={experiencia.empresa} class="relative border-s border-[#28C780] dark:border-[#115e3b]">
                         <li class="mb-1 p-2 ms-6">
                           <span class="absolute flex items-center justify-center w-6 h-6 bg-teal-200 rounded-full -start-3 ring-8 ring-white dark:ring-[#28C780] dark:bg-white">
                             <svg class="w-2.5 h-2.5 text-[#28C780] dark:text-[#115e3b]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
