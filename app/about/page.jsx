@@ -60,19 +60,7 @@ function page() {
           </motion.p>
         </div>
 
-        <div className="p-4  rounded-lg dark:bg-[#373737] bg-white border dark:border-neutral-700/70">
-          <motion.img
-            initial={{ y: 100, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 0.4, delay: 0.3 },
-            }}
-            className="aspect-square object-cover rounded-lg"
-            src="https://media.licdn.com/dms/image/C4D03AQG_LE4Bt0iu7A/profile-displayphoto-shrink_200_200/0/1662572699019?e=1714608000&v=beta&t=g-iFlhVGYWxOVwW_en-M9P3nAE4Z8a0YlfDrcxAnhW0"
-            alt=""
-          />
-        </div>
+
 
         <div>
           <motion.h1
@@ -87,6 +75,20 @@ function page() {
             Mais sobre mim
           </motion.h1>
 
+          <div className="p-4  rounded-lg dark:bg-[#373737] bg-white border dark:border-neutral-700/70">
+          <motion.img
+            initial={{ y: 100, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4, delay: 0.3 },
+            }}
+            className="aspect-video object-cover   rounded-lg"
+            src="/img/ensinomedio.jpg"
+            alt=""
+          />
+        </div>
+
           <motion.p
             initial={{ y: 100, opacity: 0 }}
             whileInView={{
@@ -95,10 +97,9 @@ function page() {
               transition: { duration: 0.4, delay: 0.5 },
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
-          >
+          > 
 
-            Aos 16 anos, iniciei minha jornada no mundo da programação através de uma escola técnica, onde cursei o ensino médio e técnico em informática. Ao concluir o curso, já no terceiro ano do ensino médio, tinha adquirido habilidades para desenvolver sistemas desktop. No entanto, esse não foi meu primeiro contato com a informática. Desde a adolescência, frequentava cursos básicos na área e trabalhava com formatação de computadores. Apesar disso, sentia que essas atividades eram limitadas e almejava compreender mais profundamente o universo da programação, desejando ser capaz de criar meus próprios softwares.
-
+No início da adolescência, comecei a frequentar cursos básicos de informática. No entanto, ainda não possuía um computador próprio. A única forma de acessar um computador era nos cursos, na escola em raras ocasiões, ou em lan houses. Apesar disso, aprendi muito de forma autodidata por meio das apostilas dos cursos que fazia, decorando e praticando no dia da aula. Dessa maneira, adquiri conhecimentos sobre formatação de computadores e notebooks, iniciando assim minha jornada. Quando obtive habilidades mais avançadas, comecei a trabalhar com formatação e manutenção. O que ganhava era destinado para ajudar minha mãe, e eu me divertia fazendo isso. No entanto, sentia que essas atividades eram limitadas e ansiava compreender mais profundamente o universo da programação, desejando ser capaz de criar meus próprios softwares. Entretanto, não possuía os recursos necessários para isso. Já no oitavo ano do ensino fundamental, estabeleci como meta me tornar técnico em informática quando descobri a existência de uma escola de ensino médio técnico. Meu primeiro dia de aula coincidiu com meus 15 anos de idade, e estava muito empolgado com essa nova empreitada. No curso, estava mais interessado no curso técnico do que nas disciplinas do ensino médio.
 
           </motion.p>
 

@@ -14,9 +14,8 @@ import {
 import { useTheme } from "next-themes";
 
 let links = [
-  { icons: <PiHouseSimpleThin />, path: "/" }, 
-  { icons: <PiBagSimpleLight />, path: "/product" },
-  { icons: <PiUserLight />, path: "/about" },
+  { icons: <PiHouseSimpleThin />, path: "/" },  
+  { icons: <PiUserLight />, path: "/about" }, 
   { icons: <PiLaptopThin />, path: "/project" },
 ];
 
@@ -26,7 +25,7 @@ function Headpage() {
   const { theme, systemTheme, setTheme } = useTheme();
 
   return (
-    <nav className="  fixed w-full z-30 py-4 rounded-lg">
+    <nav className=" fixed w-full z-30 py-4 rounded-lg">
       <div className="lg:max-w-xl  md:max-w-[740px] mx-auto max-2xl px-4 lg:px-0 ">
         <div className="flex  items-center justify-between shadow-md bg-white  dark:bg-[#212121] dark:border-neutral-700/30 border rounded-xl p-3 ">
           <div className="flex space-x-3 items-center">

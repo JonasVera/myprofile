@@ -11,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className="">
-        <Theming>
-          <Header />
-          {children}
+        <Theming> 
+        <Header />
+          {children} 
         </Theming>
       </body>
     </html>
