@@ -149,7 +149,7 @@ export default function Home() {
 
                       <ol key={experiencia.empresa} class="relative border-s border-[#28C780] dark:border-[#115e3b]">
                         <li class="mb-1 p-2 ms-6">
-                          <span class="absolute flex items-center justify-center w-6 h-6 bg-teal-200 rounded-full -start-3 ring-8 ring-white dark:ring-[#28C780] dark:bg-white">
+                        <span class="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
                             <svg class="w-2.5 h-2.5 text-[#28C780] dark:text-[#115e3b]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                               <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
@@ -176,16 +176,16 @@ export default function Home() {
                       </h1>
                     </div>
                     {profileData.qualificacoes_e_atividades_profissionais.map((qualificacoes) => (
-                      <ol class="relative border-s mt-4 border-[#28C780] dark:border-[#115e3b]" key={qualificacoes}>
-                        <li class="mb-1 ms-6">
-                          <span class="absolute flex items-center justify-center w-6 h-6 bg-teal-200 rounded-full -start-3 ring-8 ring-white dark:ring-[#28C780] dark:bg-white">
+                      <ol class="relative border-s mt-1 border-[#28C780] dark:border-[#115e3b]" key={qualificacoes}>
+                        <li class="mb-1 ms-5">
+                          <span class="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
                           <svg width="84px" height="84px" viewBox="-6.24 -6.24 36.48 36.48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                             <g id="SVGRepo_iconCarrier"> <path d="M9 12L11 14L15 10M12 3L13.9101 4.87147L16.5 4.20577L17.2184 6.78155L19.7942 7.5L19.1285 10.0899L21 12L19.1285 13.9101L19.7942 16.5L17.2184 17.2184L16.5 19.7942L13.9101 19.1285L12 21L10.0899 19.1285L7.5 19.7942L6.78155 17.2184L4.20577 16.5L4.87147 13.9101L3 12L4.87147 10.0899L4.20577 7.5L6.78155 6.78155L7.5 4.20577L10.0899 4.87147L12 3Z" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"/> </g>
                             </svg>
                           </span>
-                          <p class="flex items-centerp px-2 mb-1 text-lg  text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: qualificacoes }}>
+                          <p class="flex mb-1 items-centerp px-2 text-lg  text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: qualificacoes }}>
                           </p>
                         </li>
                       </ol>
