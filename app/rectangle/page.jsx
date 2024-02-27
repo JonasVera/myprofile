@@ -5,6 +5,7 @@ import { BsChevronRight } from "react-icons/bs";
 import { AiOutlineDribbble, AiOutlinePlusCircle } from "react-icons/ai";
 import { CiInstagram, CiTwitter } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 const links = [
   {
@@ -50,7 +51,8 @@ function page() {
 
         <div className="px-4">
           <div className="drop-shadow-md  mt-8">
-            <img
+            <Image
+             width={100} height={100}
               className="w-12 h-12 object-cover rounded-full "
               src="/img/img1.png"
               alt=""
@@ -73,7 +75,8 @@ function page() {
             </div>
 
             <div className="mt-8">
-              <img
+              <Image
+                width={100} height={100}
                 className="aspect-square rounded-lg"
                 src="/img/img3.png"
                 alt=""
@@ -86,7 +89,8 @@ function page() {
                 customers.
               </p>
 
-              <img
+              <Image
+                width={100} height={100}
                 className="aspect-square rounded-lg"
                 src="/img/img5.png"
                 alt=""
@@ -106,7 +110,8 @@ function page() {
                 distinguishing Rectangle amidst its competition.
               </p>
 
-              <img
+              <Image
+                width={100} height={100}
                 className="aspect-square rounded-lg my-7"
                 src="/img/img6.png"
                 alt=""
@@ -154,7 +159,8 @@ function page() {
                     <Link href={link.href}>
                       <div className="flex items-center gap-x-4 max-md:flex-col max-md:items-start">
                         <div className="drop-shadow-md">
-                          <img
+                          <Image
+                            width={100} height={100}
                             className="w-10 h-10 object-cover rounded-full "
                             src={link.img}
                             alt=""

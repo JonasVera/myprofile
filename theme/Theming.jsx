@@ -1,4 +1,5 @@
 "use client";
+import FooterPage from "@/app/Footer/page";
 import { ThemeProvider } from "next-themes";
 
 import React from "react";
@@ -6,7 +7,10 @@ import React from "react";
 function Theming({ children }) {
   return (
     <>
-      <ThemeProvider attribute="class">{children}</ThemeProvider>
+      <ThemeProvider attribute="class">
+        {children}
+      </ThemeProvider>
+     
     </>
   );
 }
