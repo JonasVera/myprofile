@@ -73,16 +73,16 @@ function FooterPage() {
                         </div>
 
                         <div className="flex gap-x-2">
-                            <div className="border-neutral-300 bg-white dark:bg-[#373737] dark:border-none shadow-md drop-shadow-md border  w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
+                            <Link href="https://twitter.com/jns_vera" target="__blank" className="border-neutral-300 bg-white dark:bg-[#373737] dark:border-none shadow-md drop-shadow-md border  w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
                                 <CiTwitter className="text-neutral-500 dark:text-white" />
-                            </div>
-                            <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
+                            </Link>
+                            <Link  href="https://www.instagram.com/jonnas.dev/" target="__blank"  className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
                                 <CiInstagram className="text-neutral-500 dark:text-white" />
-                            </div>{" "}
+                            </Link>{" "}
 
-                            <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1  ">
+                            <Link  href="https://www.linkedin.com/in/jonas-silva-vera-817b46192/" target="__blank"  className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1  ">
                                 <FaLinkedinIn className="text-neutral-500 dark:text-white" />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

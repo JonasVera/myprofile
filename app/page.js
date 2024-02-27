@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { profileData } from "./utils/profileData";
 import React, { useEffect, useState } from 'react';
 import { GrValidate } from "react-icons/gr";
+import FooterPage from "./Footer/page";
 
 export default function Home() {
 
@@ -118,16 +119,16 @@ export default function Home() {
                         <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
                         <GrValidate />
                           </span>
-                          <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"> {experiencia.cargo} | {experiencia.empresa}
+                          <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"> {experiencia.cargo}
                           </h3>
+                          <span className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{experiencia.empresa}</span>
                           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{experiencia.periodo}</time>
 
                           <div
-                        
+
                             dangerouslySetInnerHTML={{ __html: experiencia && experiencia.descricao }}
                           ></div>
-
-
+ 
 
                         </li>
                       </ol>
@@ -145,7 +146,7 @@ export default function Home() {
                           <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
                                <LiaCertificateSolid />
                           </span>
-                          <p className="flex mb-1 items-centerp px-2 text-lg  text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: qualificacoes }}>
+                          <p className="flex mb-1 items-centerp px-2 text-sm  text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: qualificacoes }}>
                           </p>
                         </li>
                       </ol>
@@ -156,8 +157,10 @@ export default function Home() {
               </div>
 
             </div>
-          </div> 
+          </div>  
         </div>  
+
+        <FooterPage />
       </motion.div>
     </>
   );

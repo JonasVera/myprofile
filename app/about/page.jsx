@@ -59,11 +59,18 @@ function Page() {
           >
             Mais sobre mim
           </motion.h1>
-
-          <div className="p-4  rounded-lg dark:bg-[#373737] bg-white border dark:border-neutral-700/70">
-
-          </div>
-
+ 
+          <motion.img
+            initial={{ y: 100, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4, delay: 0.3 },
+            }}
+            className="h-[200px] object-cover rounded-lg"
+            src="./img/profile.jpeg"
+            alt=""
+          />  
           <motion.p
             initial={{ y: 100, opacity: 0 }}
             whileInView={{
