@@ -1,9 +1,11 @@
 import React from "react"; 
 import { CiInstagram, CiTwitter } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa";
+import FooterPage from "../Footer/page";
 
 function page() {
   return (
+    <>
     <div className="bg-white top-24 relative dark:bg-[#212121] shadow-md rounded-xl max-w-xl lg:mx-auto mx-4 lg:max-w-xl  max-2xl  md:mx-auto sm:mx-auto lg:px-0 ">
       <div className="p-2 lg:mx-4">
         <div className=" lg:p-6 p-3">
@@ -64,45 +66,11 @@ function page() {
               </button>
             </div>
           </div>
-        </div>
-        <div className="bg-[#F6F8FA] p-6 dark:bg-[#2C2C2C]  mt-14 rounded-md">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-x-2 font-InterRe">
-              <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
-              <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
-                Me siga em
-              </h1>
-            </div>
-
-            <div className="flex gap-x-2">
-              <div className="border-neutral-300 bg-white dark:bg-[#373737] dark:border-none shadow-md drop-shadow-md border  w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
-                <CiTwitter className="text-neutral-500 dark:text-white" />
-              </div>
-              <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1 ">
-                <CiInstagram className="text-neutral-500 dark:text-white" />
-              </div>{" "} 
-              <div className="border-neutral-300 bg-white shadow-md drop-shadow-md border dark:bg-[#373737]  dark:border-none w-9 h-9 px-2 rounded-full flex items-center justify-center gap-x-1  ">
-                <FaLinkedinIn className="text-neutral-500 dark:text-white" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6  mt-4 rounded-md">
-            <div className="text-center">
-              <span className="text-neutral-700 dark:text-neutral-400">
-                © {new Date().getFullYear()} Jonas Silva Vera 
-              </span>
-              <p className="text-neutral-500">
-                By{" "}
-                <span className="hover:underline  hover:text-neutral-400 text-neutral-700 dark:text-neutral-300">
-                  Jonas
-                </span>
-              </p>
-            </div>
-          </div>
+        </div> 
       </div>
     </div>
+    <FooterPage/>
+    </>
   );
 }
 

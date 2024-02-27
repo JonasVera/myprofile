@@ -27,8 +27,14 @@ function FooterPage() {
     const [hoveredPath, setHoveredPath] = useState(pathname);
     const { theme, systemTheme, setTheme } = useTheme();
 
+    const copiarEmail = () => {
+        navigator.clipboard.writeText("jonasverasilva@gmail.com");  
+       
+      };
+
     return (
 
+        
         <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
@@ -53,7 +59,7 @@ function FooterPage() {
                                 <AiOutlinePlusCircle className="text-white tex-3" />
                                 <Link href={"/contact"} className="text-white  font-semibold">Entre em contato</Link>
                             </div>
-                            <div className="border-neutral-300 shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
+                            <div onClick={copiarEmail()} className="border-neutral-300 cursor-pointer shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                                 <FiCopy className="" />
                                 <span className="text-neutral-700  dark:text-white font-semibold">
                                     Copiar Email

@@ -160,8 +160,9 @@ export default function Home() {
           </div>  
         </div>  
 
-        <FooterPage />
       </motion.div>
+
+      <FooterPage />
     </>
   );
 }

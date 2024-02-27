@@ -14,6 +14,7 @@ import FooterPage from "../Footer/page";
 
 function Page() {
   return (
+    <>
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
@@ -108,8 +109,10 @@ function Page() {
         </div>
       </div>
 
-    <FooterPage />
     </motion.div>
+
+    <FooterPage />
+    </>
   );
 }
 

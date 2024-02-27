@@ -30,6 +30,7 @@ function Page() {
   
 
   return (
+    <>
     <div className="bg-white top-24 relative dark:bg-[#212121] shadow-md rounded-xl max-w-xl lg:mx-auto mx-4 lg:max-w-xl max-2xl md:mx-auto sm:mx-auto lg:px-0 ">
       <div className=" lg:p-6 p-4 max-md:p-5 ">
         <div className="flex items-center mt-4  gap-x-2 ">
@@ -85,8 +86,10 @@ function Page() {
 
         </div>
       </div>
-      <FooterPage/>
+     
     </div>
+     <FooterPage/>
+    </>
   );
 }
 
