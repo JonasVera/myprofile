@@ -20,9 +20,10 @@ function FooterPage() {
     const [hoveredPath, setHoveredPath] = useState(pathname);
     const { theme, systemTheme, setTheme } = useTheme();
 
+    
     const copiarEmail = () => {
         if (typeof window !== 'undefined' && navigator.clipboard) {
-          navigator.clipboard.writeText(email); // Copia o email para a área de transferência
+          navigator.clipboard.writeText("jonasverasilva@gmail.com"); // Copia o email para a área de transferência
           alert(`Email copiado: ${email}`);
         } else {
           console.error('A API de clipboard não está disponível.');
