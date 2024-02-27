@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import {
     PiLaptopThin,
     PiUserLight,
@@ -12,6 +14,7 @@ import {
 import { useTheme } from "next-themes";
 import { FiCopy } from "react-icons/fi";
 import { CiInstagram, CiTwitter } from "react-icons/ci";
+ 
 
 let links = [
     { icons: <PiHouseSimpleThin />, path: "/" },
@@ -48,7 +51,7 @@ function FooterPage() {
                         <div className="flex items-center gap-x-4 justify-center mt-6">
                             <div className="bg-black dark:bg-[#373737] w-fit shadow-md  px-2 rounded-md flex items-center gap-x-2 py-1">
                                 <AiOutlinePlusCircle className="text-white tex-3" />
-                                <span className="text-white  font-semibold">Entre em contato</span>
+                                <Link href={"/contact"} className="text-white  font-semibold">Entre em contato</Link>
                             </div>
                             <div className="border-neutral-300 shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                                 <FiCopy className="" />

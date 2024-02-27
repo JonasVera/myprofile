@@ -9,9 +9,10 @@ import { BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import FooterPage from "../Footer/page";
 
-  
-function page() {
+
+function Page() {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -28,7 +29,7 @@ function page() {
 
         <div>
           <h1 className="text-3xl font-InterBo mt-7 my-3 dark:text-white text-neutral-800">
-            Sou eu Jonas
+            Jonas aqui!
           </h1>
           <motion.p
             initial={{ y: 100, opacity: 0 }}
@@ -39,12 +40,13 @@ function page() {
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-            Ao longo de minha trajetória, destaco minha especialização na migração de sistemas, engajamento em projetos diversificados e habilidade em resolução de falhas. Trabalhei com uma variedade de tecnologias, incluindo Java, Spring Boot, Angular, VB.Net e C#. Minha experiência abrange desde a concepção até a implementação, garantindo soluções eficazes. Recentemente, concentrei-me em testes, correções e desenvolvimento utilizando C# .Net, no âmbito do Scrum. Estou preparado para aplicar essa experiência em novos desafios e contribuir para o sucesso de futuros projetos.
+            Ao longo de minha trajetória, destaco minha especialização na migração de sistemas, engajamento em projetos diversificados e habilidade em
+            resolução de falhas. Trabalhei com uma variedade de tecnologias, incluindo Java, Spring Boot, Angular, VB.Net e C#.
+            Minha experiência abrange desde a concepção até a implementação, garantindo soluções eficazes.
+            Recentemente, concentrei-me em testes, correções e desenvolvimento utilizando Java em soluções bancárias.
+            Estou preparado para aplicar essa experiência em novos desafios e contribuir para o sucesso de futuros projetos.
           </motion.p>
         </div>
-
-
-
         <div>
           <motion.h1
             initial={{ scale: 0, opacity: 0 }}
@@ -59,18 +61,8 @@ function page() {
           </motion.h1>
 
           <div className="p-4  rounded-lg dark:bg-[#373737] bg-white border dark:border-neutral-700/70">
-          <motion.img
-            initial={{ y: 100, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 0.4, delay: 0.3 },
-            }}
-            className="aspect-video object-cover   rounded-lg"
-            src="/img/ensinomedio.jpg"
-            alt=""
-          />
-        </div>
+
+          </div>
 
           <motion.p
             initial={{ y: 100, opacity: 0 }}
@@ -80,9 +72,16 @@ function page() {
               transition: { duration: 0.4, delay: 0.5 },
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
-          > 
+          >
 
-No início da adolescência, comecei a frequentar cursos básicos de informática. No entanto, ainda não possuía um computador próprio. A única forma de acessar um computador era nos cursos, na escola em raras ocasiões, ou em lan houses. Apesar disso, aprendi muito de forma autodidata por meio das apostilas dos cursos que fazia, decorando e praticando no dia da aula. Dessa maneira, adquiri conhecimentos sobre formatação de computadores e notebooks, iniciando assim minha jornada. Quando obtive habilidades mais avançadas, comecei a trabalhar com formatação e manutenção. O que ganhava era destinado para ajudar minha mãe, e eu me divertia fazendo isso. No entanto, sentia que essas atividades eram limitadas e ansiava compreender mais profundamente o universo da programação, desejando ser capaz de criar meus próprios softwares. Entretanto, não possuía os recursos necessários para isso. Já no oitavo ano do ensino fundamental, estabeleci como meta me tornar técnico em informática quando descobri a existência de uma escola de ensino médio técnico. Meu primeiro dia de aula coincidiu com meus 15 anos de idade, e estava muito empolgado com essa nova empreitada. No curso, estava mais interessado no curso técnico do que nas disciplinas do ensino médio.
+            No início da adolescência, comecei a frequentar cursos básicos de informática.
+            No entanto, ainda não possuía um computador próprio. A única forma de acessar um computador era nos cursos, na escola em raras ocasiões, ou em lan houses.
+            Apesar disso, aprendi muito de forma autodidata por meio das apostilas dos cursos que fazia, decorando e praticando no dia da aula.
+            Dessa maneira, adquiri conhecimentos sobre formatação de computadores e notebooks, iniciando assim minha jornada. Quando obtive habilidades mais avançadas, comecei a trabalhar com formatação e manutenção.
+            O que ganhava era destinado para ajudar minha mãe, e eu me divertia fazendo isso. No entanto, sentia que essas atividades eram limitadas e ansiava compreender mais profundamente o universo da programação,
+            desejando ser capaz de criar meus próprios softwares. Entretanto, não possuía os recursos necessários para isso. Já no oitavo ano do ensino fundamental, estabeleci como meta me tornar técnico em informática
+            quando descobri a existência de uma escola de ensino médio técnico.
+            Meu primeiro dia de aula coincidiu com meus 15 anos de idade, e estava muito empolgado com essa nova empreitada. No curso, estava mais interessado no curso técnico do que nas disciplinas do ensino médio.
 
           </motion.p>
 
@@ -95,14 +94,16 @@ No início da adolescência, comecei a frequentar cursos básicos de informátic
             }}
             className="text-neutral-700 text-lg my-7 leading-8 font-InterRe dark:text-[#C0C0C0]"
           >
-            A oportunidade para realizar esse sonho surgiu quando ingressei na escola técnica. Foi então que decidi construir minha carreira como programador. Em 2021, dei um importante passo ao me formar como analista de sistemas pela Faculdade Lourenço Filho. Este foi apenas o início de uma jornada em constante aprendizado e evolução no mundo da tecnologia.
+            Em 2021, dei um importante passo ao me formar como analista de sistemas pela Faculdade Lourenço Filho. Este foi apenas o início de uma jornada em constante aprendizado e evolução no mundo da tecnologia.
 
           </motion.p>
- 
-        </div> 
+
+        </div>
       </div>
+
+    <FooterPage />
     </motion.div>
   );
 }
 
-export default page;
+export default Page;
