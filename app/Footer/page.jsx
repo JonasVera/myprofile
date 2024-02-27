@@ -5,6 +5,7 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ToastContainer } from 'react-toastify';
 
 import {
     PiLaptopThin,
@@ -20,14 +21,12 @@ function FooterPage() {
     const [hoveredPath, setHoveredPath] = useState(pathname);
     const { theme, systemTheme, setTheme } = useTheme();
 
-    
+
     const copiarEmail = () => {
         if (typeof window !== 'undefined' && navigator.clipboard) {
           navigator.clipboard.writeText("jonasverasilva@gmail.com"); // Copia o email para a área de transferência
-          alert(`Email copiado: ${email}`);
-        } else {
-          console.error('A API de clipboard não está disponível.');
-        }
+       
+        }  
       };
 
     return (
