@@ -115,7 +115,7 @@ export default function Home() {
                     {profileData.experiencia_profissional.map((experiencia) => (
 
                       <ol key={experiencia.empresa} class="relative border-s border-[#28C780] dark:border-[#115e3b]">
-                        <li className="mb-1 p-2 ms-6">
+                        <li className=" p-2 ms-6">
                         <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
                         <GrValidate />
                           </span>

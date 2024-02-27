@@ -4,9 +4,8 @@ import { usePathname } from "next/navigation";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ToastContainer } from 'react-toastify';
-
+import Link from "next/link"; 
+import { Toaster, toast } from "react-hot-toast";
 import {
     PiLaptopThin,
     PiUserLight,
@@ -14,18 +13,17 @@ import {
 } from "react-icons/pi";
 import { useTheme } from "next-themes";
 import { FiCopy } from "react-icons/fi";
-import { CiInstagram, CiTwitter } from "react-icons/ci";
+import { CiInstagram, CiTwitter } from "react-icons/ci"; 
   
 function FooterPage() {
     const pathname = usePathname() || "";
     const [hoveredPath, setHoveredPath] = useState(pathname);
     const { theme, systemTheme, setTheme } = useTheme();
-
-
+ 
     const copiarEmail = () => {
         if (typeof window !== 'undefined' && navigator.clipboard) {
-          navigator.clipboard.writeText("jonasverasilva@gmail.com"); // Copia o email para a área de transferência
-       
+          navigator.clipboard.writeText("jonasverasilva@gmail.com");  
+          toast.success("Email copiado!");
         }  
       };
 
@@ -39,7 +37,7 @@ function FooterPage() {
         >
 
             <footer className="mt-5 p-2 pb-5 ">
-
+            <Toaster />
                 <div className="mx-auto pb-10 max-w-md">
                     <div>
                         <h2 className=" text-4xl p-10 text-center dark:text-white text-[#353849] font-InterBo">
@@ -56,7 +54,7 @@ function FooterPage() {
                                 <AiOutlinePlusCircle className="text-white tex-3" />
                                 <Link href={"/contact"} className="text-white  font-semibold">Entre em contato</Link>
                             </div>
-                            <div onClick={copiarEmail()} className="border-neutral-300 cursor-pointer shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
+                            <div onClick={copiarEmail} className="border-neutral-300 cursor-pointer shadow-md border dark:border-neutral-700  w-fit h-8 px-2 rounded-md flex items-center gap-x-2 ">
                                 <FiCopy className="" />
                                 <span className="text-neutral-700  dark:text-white font-semibold">
                                     Copiar Email
