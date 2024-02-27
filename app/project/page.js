@@ -3,15 +3,15 @@
 import Link from "next/link"; 
 import { BsChevronRight } from "react-icons/bs";
 import { FiArrowRight, FiCopy } from "react-icons/fi"; 
-import { useEffect, useState } from "react"; 
+import React, { useEffect, useState } from 'react';
 import axios from "axios";
 
 // import { BsChevronRight } from "react-icons/bs";
  
  
-function page() { 
+function Page() { 
   
-  const [userData, setUserData] = useState(null); 
+  const [userData, setUserData] = useState([]); 
   const username = 'JonasVera'; 
  
   useEffect(() => {
@@ -107,5 +107,5 @@ function page() {
 }
 
 
-export default page;
+export default Page;
 

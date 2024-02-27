@@ -9,7 +9,7 @@ import { BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { profileData } from "./utils/profileData";
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GrValidate } from "react-icons/gr";
 
 export default function Home() {
