@@ -2,12 +2,8 @@
 
 import Link from "next/link"; 
 import { BsChevronRight } from "react-icons/bs";
-import { FiArrowRight, FiCopy } from "react-icons/fi";
-import { AiOutlinePlusCircle, AiOutlineDribbble } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
-import { useEffect, useState } from "react";
-import  {projectsData} from "../utils/projects";
+import { FiArrowRight, FiCopy } from "react-icons/fi"; 
+import { useEffect, useState } from "react"; 
 import axios from "axios";
 
 // import { BsChevronRight } from "react-icons/bs";
@@ -15,14 +11,9 @@ import axios from "axios";
  
 function page() { 
   
-  const [userData, setUserData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [userData, setUserData] = useState(null); 
   const username = 'JonasVera'; 
-
-  useEffect(() => {
-    console.log(userData);
-  }, [userData]);
-
+ 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
@@ -82,14 +73,14 @@ function page() {
           <div className="mt-6">
            
               {userData?.map((repositorio) => (
-                 <Link target="__blank" href={repositorio.html_url}>
+                 <Link key={repositorio.name} target="__blank" href={repositorio.html_url}>
                 <div
                   key={repositorio.name}
                   className="bg-white dark:bg-[#373737] mt-3  mb-4 rounded-xl  max-md:flex-col max-md:items-start flex items-center justify-between p-5 dark:border-neutral-600  shadow-md drop-shadow-md dark:border max-md:p-7 "
                 >
                   <div className="flex items-center gap-x-4 max-md:flex-col max-md:items-start">
                     <div className="drop-shadow-md dark:bg-neutral-900/50 bg-white  p-2 rounded-full ">
-                      <img className="h-10" src={repositorio.owner.avatar_url} />
+                      
                     </div>
 
                     <div className="max-md:mt-5">
