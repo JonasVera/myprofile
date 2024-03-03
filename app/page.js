@@ -2,15 +2,15 @@
 
 import { FiArrowRight, FiCopy } from "react-icons/fi";
 import { AiOutlinePlusCircle, AiOutlineDribbble } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaRegCalendarAlt } from "react-icons/fa";
 import { CiLocationArrow1, CiTwitter, CiInstagram } from "react-icons/ci";
-import {LiaCertificateSolid} from "react-icons/lia";
-import { BsChevronRight } from "react-icons/bs";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { BiBookAlt, BiBuildings } from "react-icons/bi";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { profileData } from "./utils/profileData";
 import React, { useEffect, useState } from 'react';
-import { GrValidate } from "react-icons/gr";
+import { GrCertificate, GrValidate } from "react-icons/gr";
 import FooterPage from "./Footer/page";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         className="bg-white top-24 relative dark:bg-[#212121] shadow-md rounded-xl max-w-xl lg:mx-auto mx-4 lg:max-w-xl  max-2xl  md:mx-auto sm:mx-auto lg:px-0 "
       >
         <div className="p-2 lg:mx-4 pb-10">
-          <div className=" lg:p-6 p-3 ">
+          <div className=" lg:p-4 p-3 ">
             <div className="flex justify-between  w-full">
               <div className="flex items-center gap-x-2 font-InterRe">
                 <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
@@ -92,32 +92,30 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="bg-[#F6F8FA] dark:bg-[#2C2C2C] p-6 max-md:p-3 rounded-xl">
-              <div className="flex items-center justify-between mt-4">
-                <div className="flex items-center gap-x-2 font-InterRe">
-                  <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
-                  <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
-                    Experiência profissional
-                  </h1>
-                </div>
-              </div>
-
+            <div className=" p-4 max-md:p-3 ">
+ 
               <div className='flex  flex-row h-full m-auto'>
 
-                <div className='mt-5'>
+                <div className='mt-2'>
 
-                  <p className="mb-2">
+                  <p className="mb-4">
                     Formado em {profileData.formacao_academica.curso}
                     <span className="block mb-2 mt-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Instituição: {profileData.formacao_academica?.instituicao}</span>
                     <span className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Ano de Conclusão: {profileData.formacao_academica?.ano_conclusao}</span>
                   </p>
                   <div >
+                    <div className="flex items-center gap-x-2 font-InterRe">
+                      <div className="w-[6px] h-[6px] rounded-full  bg-[#6b6b6b]" />
+                      <h1 className="text-neutral-700 dark:text-[#C0C0C0] text-lg font-InterMe">
+                      Experiência Profissional
+                      </h1>
+                    </div>
                     {profileData.experiencia_profissional.map((experiencia) => (
 
                       <ol key={experiencia.empresa} class="relative border-s border-[#28C780] dark:border-[#115e3b]">
                         <li className=" p-2 ms-6">
-                        <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
-                        <GrValidate />
+                          <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
+                            <GrValidate />
                           </span>
                           <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"> {experiencia.cargo}
                           </h3>
@@ -128,7 +126,7 @@ export default function Home() {
 
                             dangerouslySetInnerHTML={{ __html: experiencia && experiencia.descricao }}
                           ></div>
- 
+
 
                         </li>
                       </ol>
@@ -143,11 +141,14 @@ export default function Home() {
                     {profileData.qualificacoes_e_atividades_profissionais.map((qualificacoes) => (
                       <ol className="relative border-s mt-1 border-[#28C780] dark:border-[#115e3b]" key={qualificacoes}>
                         <li className="mb-1 ms-5">
-                          <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
-                               <LiaCertificateSolid />
+                        <span className="absolute flex items-center justify-center w-4 h-4 bg-teal-200 rounded-full -start-2 ring-4 ring-white dark:ring-[#28C780] dark:bg-white">
+                        <GrCertificate />
                           </span>
-                          <p className="flex mb-1 items-centerp px-2 text-sm  text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: qualificacoes }}>
-                          </p>
+                          <div className="px-2 mb-1 text-sm  text-gray-900 dark:text-white">
+                            <p >{qualificacoes.curso}</p>
+                            <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Instituiçao: {qualificacoes.empresa}</p>
+                            <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Ano: {qualificacoes.ano}</p> 
+                          </div>
                         </li>
                       </ol>
                     ))}
@@ -157,8 +158,8 @@ export default function Home() {
               </div>
 
             </div>
-          </div>  
-        </div>  
+          </div>
+        </div>
 
       </motion.div>
 

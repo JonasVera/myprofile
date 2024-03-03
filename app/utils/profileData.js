@@ -58,11 +58,30 @@ export const profileData = {
         }
     ],
     "qualificacoes_e_atividades_profissionais": [
-        "Padronização de Projetos Web com Java EE e Spring Boot<br/>Dell Lead - 2021",
-        "Teste unitários com BDD E TDD<br/>Dell Lead - 2021",
-        "NETCore 3.1/NET5.0 - C# API - Arquitetura com DDD na PRÁTICA<br/>Udemy - 2021",
-        "Angular , JWT, Spring Boot,REST,Security,Data e MongoDB<br/>Udemy - 2021",
-        "Oracle PL/SQL Especialista: do Básico ao Avançado - 2022<br/>Udemy - 2022",
-        "Power BI & DAX Avançado<br/>Udemy - 2018"
+        {
+            "curso":"Oracle PL/SQL Especialista: do Básico ao Avançado",
+            "empresa":"Udemy",
+            "ano": "2022"
+        },
+        {
+            "curso":"Padronização de Projetos Web com Java EE e Spring Boot",
+            "empresa":"Dell Lead",
+            "ano": "2021"
+        },
+        {
+            "curso":"Teste unitários com BDD E TDD",
+            "empresa":"Dell Lead",
+            "ano": "2021"
+        },
+        {
+            "curso":"NETCore 3.1/NET5.0 - C# API - Arquitetura com DDD na PRÁTICA",
+            "empresa":"Udemy",
+            "ano": "2021"
+        },
+        {
+            "curso":"Angular,JWT,Spring Boot,REST,Security,Data e MongoDB",
+            "empresa":"Udemy",
+            "ano": "2021"
+        },
     ]
 }
